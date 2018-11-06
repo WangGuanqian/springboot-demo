@@ -1,4 +1,4 @@
-package com.ybl.springbootdemo;
+package com.wgq.springbootdemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
