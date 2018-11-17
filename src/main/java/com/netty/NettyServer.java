@@ -9,6 +9,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 
+import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * @author WangGuanqian
  * @Date 2018/11/16 16:29
@@ -16,6 +19,15 @@ import io.netty.handler.codec.string.StringDecoder;
 public class NettyServer {
 
     public static void main(String[] args) {
+        Hashtable hashtable = new Hashtable();
+        hashtable.put("k", "vvv");
+        hashtable.get("k");
+
+        ConcurrentHashMap map = new ConcurrentHashMap();
+        map.put("", "");
+        map.get("");
+        map.size();
+
         ServerBootstrap serverBootstrap = new ServerBootstrap();
 
         NioEventLoopGroup boss = new NioEventLoopGroup();
